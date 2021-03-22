@@ -20,7 +20,7 @@ function OpenDB() {
                                                  echo ('Запрос цены товара выполнен с ошибкой'); 
                                             } else {
                                                 $src=$res->fetch();
-                                                if ($src) echo(' Price: '.$src['Fasovka'].'='.$src['ZenaRozn']);
+                                                if ($src) echo(' Price: '.$src['Fasovka'].'='.$src['ZenaRozn'].'  ');
                                                 
                                             }
                                     } 
