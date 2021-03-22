@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: / 
+Allow: /index.html
+Allow: /about.html
+Allow: /search.html
+Allow: /Pinotex.html
+Allow: /Marshall.html
+Allow: /Tikkutila.html
+Allow: /Senta/index.html
+Allow: /Senta/
+Disallow: /Base/
+Sitemap: http://www.sentasev.ru/sitemap.xml
