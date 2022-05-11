@@ -9,4 +9,5 @@ Allow: /Tikkutila.html
 Allow: /Senta/index.html
 Allow: /Senta/
 Disallow: /Base/
+Disallow: /Base/Clean/
 Sitemap: http://www.sentasev.ru/sitemap.xml
