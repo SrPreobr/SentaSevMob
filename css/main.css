@@ -777,8 +777,12 @@ td, th {
   font-size: 24px;
 }
 
-b, i, sup, sub, u, del {
+i, sup, sub, u, del {
   color: #8490ff;
+}
+
+b {
+  color: #15229f;
 }
 
 h1 {

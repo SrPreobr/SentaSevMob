@@ -1,6 +1,8 @@
 <?php
+// https://phpfaq.ru/pdo
+// https://maxsite.org/page/sqlite-php
 
-$db = 0; // глобальный дискриптор БД
+ // глобальный дискриптор БД $db = 0;
 $perpage  = 20; // Количество строк отображаемых данных из БД на странице
 $temid = 0; // номер выбранной темы
 
@@ -155,8 +157,14 @@ function link_bar($page, $pages_count, $filtr, $temid)
 
 //
 //echo ' test1 <br> ';
+//echo sqlite_libversion();
+//print_r(SQLite3::version());
 
-OpenDB();
+//OpenDB();
+// при объявлении $db = 0; в начале программы выдавалась ошибка несответствия типов 
+// expected type 'object'. found 'int'
+// поэтому не стал использовать OpenDB(); и вынес это просто сюда
+$db = new PDO('sqlite:Katalog.s3db');
 
 // Обработка № Темы
 if (empty(@$_GET['temid']) || ($_GET['temid'] <= 0)) {
